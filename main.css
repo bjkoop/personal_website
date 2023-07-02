@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Open Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    background-image: url("/home/koop/Documenten/test_site/images/brain-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+}
+
+header h1 {
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+    color: #ffffff;
+    font-size: 75px;
+}
+
+/* For mobile devices */
+@media (max-width: 720px) {
+    header {
+        min-height: 200px;
+    }
+
+    header h1 {
+        font-size: 65px;
+    }
+}
+
+#navitems {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000f19, #0065b1);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 999;
+}
+
+#navitems li a {
+    float: left;    /* Align all elements to the left */
+    display: block; /* Generate a block box */
+    color: #ffffff; /* Set text color */
+    text-align: center; /* Center texts inside the elements */
+    text-decoration: none; /* Standard not decorated */
+    padding: 15px 15px; /* Space insed the elements */
+    font-size: 20px;    /* Font size of the elements */
+    border-right: 1px solid #ffffff; /* Line right of every element */
+}
+
+#navitems li a:hover {
+	background-color: #0065b1; /* Color when hovering over */
+    font-weight: 800;   /* Bold when hovering over */
+    text-decoration: underline; /* Underline when hovering over */
+}
+
+section {
+    margin: 10px; /* Space outside the section */
+    padding: 10px; /* Space inside the section */
+}
+
+section h2 {
+    margin-bottom: 20px; /* Space between heading and paragraphs */
+}
+
+section p {
+    margin-top: 20px; /* Space between paragraphs */
+}
+
+footer {
+    text-align: center; /* Center each item */
+}
+
+.social {
+    width: 30px;    /* Set the height of the socials */
+    height: auto;   /* Set the width of the socials */
+    padding: 0px;   /* Let the border wrap around the image */
+    margin: 10px;   /* Space between the socials */
+    /*border: 2px solid #000000;    Make a border */
+    /* border-radius: 10px; Round the edges of the border */
+}
