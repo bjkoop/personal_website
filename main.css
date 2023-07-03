@@ -1,47 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family:'Open Sans', sans-serif;
+    margin: 0;  /* Remove the standard margin */
+    padding: 0; /* Remove the standard padding */
+    font-family:'Open Sans', sans-serif;    /* Set a global font */
 }
 
-header {
-    position: relative;
-    background-image: url("/home/koop/Documenten/test_site/images/brain-background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 200px;
-}
-
-header h1 {
-    position: absolute;
-    bottom: 0;
-    margin: 20px;
-    color: #ffffff;
-    font-size: 75px;
+#title {
+    color: #ffffff;   /* Set the font color */
+    font-size: 75px;    /* Set the font size */
 }
 
 /* For mobile devices */
 @media (max-width: 720px) {
-    header {
-        min-height: 200px;
-    }
-
-    header h1 {
-        font-size: 65px;
+    #title {
+        font-size: 65px;    /* Change the font size */
     }
 }
 
 #navitems {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #000f19, #0065b1);
-    overflow: hidden;
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    z-index: 999;
+    list-style-type: none;  /* Remove item markers */
+    margin: 0;  /* Space outside the object */
+    padding: 0; /* Space inside the object */
+    background: linear-gradient(to right, #000f19, #0065b1); /* Color */
+    overflow: hidden;   /* Hide overflowing content */
+    position: fixed;    /* Fix the postion of the element */
+    width: 100%;    /* Set the width to full-page */
+    height: 50px;   /* Set the height */
+    z-index: 999;   /* Let the element float above everything */
 }
 
 #navitems li a {
@@ -50,7 +34,7 @@ header h1 {
     color: #ffffff; /* Set text color */
     text-align: center; /* Center texts inside the elements */
     text-decoration: none; /* Standard not decorated */
-    padding: 15px 15px; /* Space insed the elements */
+    padding: 15px 15px; /* Space inside the elements */
     font-size: 20px;    /* Font size of the elements */
     border-right: 1px solid #ffffff; /* Line right of every element */
 }
@@ -61,9 +45,32 @@ header h1 {
     text-decoration: underline; /* Underline when hovering over */
 }
 
+#background {
+    position: fixed;    /* Place the background at a fixed position */
+    top: 0;     /* Remove the space at the top */
+    left: 0;    /* Remove the space at the bottom */
+    width: 100%;    /* Make the width 100% */
+    height: 100%;   /* Make the height 100% */
+    background-image: url("/home/koop/Documenten/test_site/images/tech-background2.jpg");   /* Set a background image */
+    background-size: cover;   /* Cover the entire page */
+    z-index: -1;    /* Put the background to the back of the page */
+}
+
+main {
+    margin: 0px;    /* Space outside the object */
+    padding: 10px;  /* Space inside the object */
+}
+
+#title {
+    padding: 80px 0 20px 20px;
+}
+
 section {
-    margin: 10px; /* Space outside the section */
-    padding: 10px; /* Space inside the section */
+    margin: 20px; /* Space outside the section */
+    padding: 15px; /* Space inside the section */
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    border-radius: 20px;
 }
 
 section h2 {
@@ -76,6 +83,10 @@ section p {
 
 footer {
     text-align: center; /* Center each item */
+    color: #ffffff; /* Set text color */
+    background: linear-gradient(to right, #000f19, #0065b1); /* Color */
+    bottom: 0;
+    width: 100%;
 }
 
 .social {
@@ -83,6 +94,6 @@ footer {
     height: auto;   /* Set the width of the socials */
     padding: 0px;   /* Let the border wrap around the image */
     margin: 10px;   /* Space between the socials */
-    /*border: 2px solid #000000;    Make a border */
-    /* border-radius: 10px; Round the edges of the border */
+    /*border: 2px solid #0065b1;    /* Make a border */
+    /*border-radius: 10px; /* Round the edges of the border */
 }
