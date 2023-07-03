@@ -64,7 +64,7 @@
     left: 0;                              /* Remove the space at the bottom */
     width: 100%;                          /* Make the width 100% */
     height: 100%;                         /* Make the height 100% */
-    background-image: url("https://github.com/bjkoop/personal_website/blob/main/images/tech-background2.jpg"); /* Set a background image */
+    background-image: url("../images/tech-background2.jpg"); /* Set a background image */
     background-size: cover;               /* Cover the entire page */
     z-index: -1;                          /* Put the background to the back of the page */
   }
