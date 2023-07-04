@@ -145,8 +145,8 @@
       color: #ffffff;                     /* Set text color */
       text-align: center;                   /* Center texts inside the elements */
       text-decoration: none;                /* Standard not decorated */
-      padding: 15px 15px;                   /* Space inside the elements */
-      font-size: 20px;                      /* Font size of the elements */
+      padding: 15px 10px;                   /* Space inside the elements */
+      font-size: 18px;                      /* Font size of the elements */
       border-right: 1px solid #ffffff;    /* Line right of every element */
     }
 
@@ -157,10 +157,9 @@
       color: #ffffff;                     /* Set text color */
       text-align: center;                   /* Center texts inside the elements */
       text-decoration: none;                /* Standard not decorated */
-      padding: 15px 15px;                   /* Space inside the elements */
-      margin-right: 20px;                   /* Space outside the element */
-      font-size: 19px;                      /* Font size of the elements */
-      border-right: 1px solid #ffffff;     /* Line left of every element */
-      border-right: none;                   /* Remove the right border */
+      padding: 15px 10px;                   /* Space inside the elements */
+      margin-right: 10px;                   /* Space outside the element */
+      font-size: 18px;                      /* Font size of the elements */
+      border: none;                   /* Remove the right border */
     }
   }
