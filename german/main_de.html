@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Bram Koop</title>
+  <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+  <div id="background"></div>
+  <header>
+    <!-- Navigation bar -->
+    <nav id="navbar">
+      <ul id="navitems">
+        <li><a id="active" href="main_de.html">Home</a></li>
+        <li><a id="about" href="about_de.html">Über</a></li>
+        <li><a id="contact" href="contact_de.html">Kontakt</a></li>
+        <li>
+          <select id="language" onchange="redirectToPage()">
+            <option value="de">🇩🇪&emsp;DE</option>
+            <option value="nl">🇳🇱&emsp;NL</option>
+            <option value="en">🇬🇧&emsp;EN</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- Page heading -->
+    <h1 id="title">Bram Koop</h1>
+    <!-- Page content -->
+    <section>
+      <h2>Willkommen auf meiner Website!</h2>
+
+      <p>Schön, dass Sie meine Website besuchen! Darf ich mich vorstellen, mein Name ist Bram Koop (22) und ich bin in Klazienaveen in Drenthe (NL) geboren und aufgewachsen. Inzwischen lebe ich seit einiger Zeit in Groningen, um mich voll und ganz auf meine persönliche Entwicklung konzentrieren zu können. Nach dem erfolgreichen Abschluss des Gymnasiums am Carmelcollege in Emmen habe ich ein Bachelor-Studium in Künstlicher Intelligenz an der Universität Groningen begonnen. Dieses Studium habe ich inzwischen im Februar 2023 abgeschlossen.</p>
+
+      <p>In meiner Freizeit spiele ich gerne Games oder spiele Akkordeon. Außerdem gehe ich gerne mit meinem Hund Sam aus. Für mich ist es wichtig, ein Gleichgewicht zwischen meiner persönlichen Entwicklung und meinem Privatleben zu finden.</p>
+
+      <p>Neben diesem Sonnenschein gibt es leider auch eine dunkle Seite. Im Jahr 2002 wurde bei mir ein Hirntumor diagnostiziert, wegen dem ich immer noch behandelt und überwacht werde. Diese Herausforderung hat mich jedoch nie davon abgehalten, meine Leidenschaften zu verfolgen und meine Ziele zu erreichen. Ich glaube daran, Hindernisse zu überwinden und Schwierigkeiten in Stärke zu verwandeln.</p>
+
+      <p>Auf dieser Website möchte ich meine Erfahrungen und Projekte mit Ihnen teilen. Ich lade Sie ein, mein Portfolio zu erkunden und mehr über meine Arbeit und Interessen zu erfahren. Wenn Sie Fragen haben, an einer Zusammenarbeit interessiert sind oder sich einfach nur unterhalten möchten, zögern Sie nicht, mich zu kontaktieren!</p>
+
+      <p>Lassen Sie uns gemeinsam die Welt erkunden, neue Möglichkeiten entdecken und positive Veränderungen anstoßen.</p>
+    </section>
+  </main>
+  <footer>
+    <!-- Social icons -->
+    <div id="socialicons">
+      <a href="https://nl.linkedin.com/in/bram-koop-2298541a3" target="_blank" rel="noopener noreferrer"><img src="../images/linkedin_logo.svg" alt="LinkedIn" class="social" aria-label="LinkedIn"></a>
+      <a href="https://www.facebook.com/bramkoop.1" target="_blank" rel="noopener noreferrer"><img src="../images/facebook_logo.svg" alt="Facebook" class="social" aria-label="Facebook"></a>
+      <a href="https://www.instagram.com/bramkoop_/" target="_blank" rel="noopener noreferrer"><img src="../images/instagram_logo.svg" alt="Instagram" class="social" aria-label="Instagram"></a>
+    </div>
+    <!-- Copyright -->
+    <p> &copy; 2023 Bram Koop | Alle Rechte vorbehalten</p>
+  </footer>
+
+  <!-- Make the language selector working -->
+  <script>
+    function redirectToPage() {
+      var selectElement = document.getElementById("language");
+      var selectedValue = selectElement.value;
+
+      switch (selectedValue) {
+        case "nl":
+          window.location.href = "../dutch/main_nl.html";
+          break;
+        case "en":
+          window.location.href = "../english/main_en.html";
+          break;
+        case "de":
+          window.location.href = "../german/main_de.html";
+          break;
+        default:
+          // Handle the default case if needed
+          break;
+      }
+    }
+  </script>
+</body>
+</html>
