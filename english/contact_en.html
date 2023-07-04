@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set a tab name -->
+    <title>Contact - Bram Koop</title>
+    <!-- Link a CSS file -->
+    <link rel="stylesheet" href="../main.css">
+</head>
+<body>
+    <div id="background"></div>
+    <header>
+        <!-- Navigation bar -->
+        <nav id="navbar">
+            <ul id="navitems">
+                <li><a id="home" href="main_en.html">Home</a></li>
+                <li><a id="about" href="about_en.html">About</a></li>
+                <li><a id="active" href="contact_en.html">Contact</a></li>
+                <li>
+                    <select id="language" onchange="redirectToPage()">
+                        <option value="en">🇬🇧&emsp;EN</option>
+                        <option value="de">🇩🇪&emsp;DE</option>
+                        <option value="nl">🇳🇱&emsp;NL</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Display a page heading -->
+        <h1 id="title">Contact</h1>
+        <!-- Add sections to the page -->
+        <section id="contactform">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfsKf7CfQgBz8YWXb6XTYzf6cumi97WPXzr-eYD80xFOBpQtg/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </section>
+    </main>
+    <footer>
+        <!-- Social icons -->
+        <div id="socialicons">
+            <a href="https://nl.linkedin.com/in/bram-koop-2298541a3" target="_blank" rel="noopener noreferrer"><img src="../images/linkedin_logo.svg" alt="LinkedIn" class="social" aria-label="LinkedIn"></a>
+            <a href="https://www.facebook.com/bramkoop.1" target="_blank" rel="noopener noreferrer"><img src="../images/facebook_logo.svg" alt="Facebook" class="social" aria-label="Facebook"></a>
+            <a href="https://www.instagram.com/bramkoop_/" target="_blank" rel="noopener noreferrer"><img src="../images/instagram_logo.svg" alt="Instagram" class="social" aria-label="Instagram"></a>
+        </div>
+        <!-- Copyright -->
+        <p>&copy; 2023 Bram Koop | All rights reserved</p>
+    </footer>
+
+    <!-- Make the language selector working -->
+    <script>
+        function redirectToPage() {
+            var selectElement = document.getElementById("language");
+            var selectedValue = selectElement.value;
+
+            switch (selectedValue) {
+                case "nl":
+                    window.location.href = "../dutch/contact_nl.html";
+                    break;
+                case "en":
+                    window.location.href = "../english/contact_en.html";
+                    break;
+                case "de":
+                    window.location.href = "../german/contact_de.html";
+                    break;
+                default:
+                    // Handle the default case if needed
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
