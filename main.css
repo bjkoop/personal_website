@@ -11,13 +11,6 @@
     font-size: 75px;                      /* Set the font size */
   }
 
-  /* For mobile devices */
-  @media (max-width: 720px) {
-    #title {
-      font-size: 65px;                    /* Change the font size */
-    }
-  }
-
   /* Navigation styles */
   #navitems {
     list-style-type: none;               /* Remove item markers */
@@ -138,4 +131,36 @@
     margin: 10px;                         /* Space between the socials */
     border: 0 solid #000000;            /* Make a border */
     border-radius: 8px;                   /* Round the edges of the border */
+  }
+
+  /* For mobile devices */
+  @media (max-width: 720px) {
+    #title {
+      font-size: 65px;                    /* Change the font size */
+    }
+
+    #navitems li a {
+      float: left;                          /* Align all elements to the left */
+      display: block;                       /* Generate a block box */
+      color: #ffffff;                     /* Set text color */
+      text-align: center;                   /* Center texts inside the elements */
+      text-decoration: none;                /* Standard not decorated */
+      padding: 15px 15px;                   /* Space inside the elements */
+      font-size: 20px;                      /* Font size of the elements */
+      border-right: 1px solid #ffffff;    /* Line right of every element */
+    }
+
+    #language {
+      background: linear-gradient(to top, #000f19, #0065b1); /* Color */
+      float: left;                         /* Align all elements to the left */
+      display: block;                       /* Generate a block box */
+      color: #ffffff;                     /* Set text color */
+      text-align: center;                   /* Center texts inside the elements */
+      text-decoration: none;                /* Standard not decorated */
+      padding: 15px 15px;                   /* Space inside the elements */
+      margin-right: 20px;                   /* Space outside the element */
+      font-size: 19px;                      /* Font size of the elements */
+      border-right: 1px solid #ffffff;     /* Line left of every element */
+      border-right: none;                   /* Remove the right border */
+    }
   }
